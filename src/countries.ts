@@ -1,4 +1,4 @@
-import { countriesDb } from './data'
+import { countriesDb } from './data';
 import type { CountriesCode } from './types/common';
 
 export class CountriesHelper {
