@@ -1,5 +1,6 @@
+import type { Country } from '../types/common';
 
-export const countriesDb = {
+export const countriesDb: Record<string, Country> = {
   AW: {
     name: {
       en: 'Aruba',
@@ -4557,7 +4558,7 @@ export const countriesDb = {
     name: {
       en: 'Tunisia',
       fr: 'Tunisie',
-      ar: 'تونس'
+      ar: 'تونس',
     },
     code: 'TN',
     capital: 'Tunis',
