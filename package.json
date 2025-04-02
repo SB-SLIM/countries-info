@@ -1,0 +1,77 @@
+{
+  "name": "@sb-codex/countries-info",
+  "version": "1.0.0",
+  "description": "countries info",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npm run clean && tsup",
+    "clean": "rimraf dist",
+    "format:fix": "prettier --write \"{src,test}/**/*.{js,ts,tsx}\" \"docs/**/*.md\"",
+    "format:check": "prettier --check \"{src,test}/**/*.{js,ts,tsx}\" \"docs/**/*.md\"",
+    "lint": "eslint src test",
+    "lint:fix": "eslint src test --fix",
+    "test": "vitest --run --typecheck",
+    "dev": "vitest",
+    "ci": "npm run build && npm run format:check && npm run test:type && npm run test",
+    "local-release": "changeset version && changeset publish",
+    "prepublishOnly": "npm run ci",
+    "test:type": "tsc --noEmit",
+    "test:watch": "vitest --watch",
+    "prepare": "husky",
+    "test:browser": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SB-SLIM/countries-info.git"
+  },
+  "keywords": [
+    "package"
+  ],
+  "author": "bouchoucha_slim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SB-SLIM/countries-info/issues"
+  },
+  "homepage": "https://github.com/SB-SLIM/countries-info#readme",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "devDependencies": {
+    "@changesets/cli": "^2.28.1",
+    "@eslint/js": "^9.23.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@types/node": "^22.13.11",
+    "@types/prop-types": "^15.7.14",
+    "@vitest/browser": "^3.0.9",
+    "eslint": "^9.23.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-import-resolver-typescript": "^4.2.2",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsdoc": "^50.6.8",
+    "eslint-plugin-prettier": "^5.2.3",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "jiti": "^2.4.2",
+    "jsdom": "^26.0.0",
+    "lint-staged": "^15.5.0",
+    "prettier": "^3.5.3",
+    "rimraf": "^6.0.1",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.27.0",
+    "vitest": "^3.0.9"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/index.js",
+      "default": "./dist/index.cjs"
+    }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "types": "./dist/index.d.ts"
+}
