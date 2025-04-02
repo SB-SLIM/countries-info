@@ -1,4 +1,4 @@
-import { countriesDb } from './data' assert { type: 'json' };
+import { countriesDb } from './data'
 import type { CountriesCode } from './types/common';
 
 export class CountriesHelper {
