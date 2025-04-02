@@ -1,5 +1,11 @@
 # @sb-codex/react-acl
 
+## 1.0.1
+
+### Patch Changes
+
+- 0c8dff5: initial patch
+
 ## 1.0.2
 
 ### Patch Changes
