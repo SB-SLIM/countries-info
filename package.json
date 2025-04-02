@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "countries info",
   "main": "dist/index.js",
+  "sideEffects": false,
   "scripts": {
     "build": "npm run clean && tsup",
     "clean": "rimraf dist",
