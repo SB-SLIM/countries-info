@@ -11,6 +11,14 @@ A helper package to retrieve detailed information about countries based on their
 - Get capital and language information for a country.
 - And more...
 
+## Notes
+
+ℹ️ **The package size may seem large** because all country-related data (such as names, currencies, languages, dialling info, capitals, and cities) is directly stored in the code for fast and offline access.
+
+We're currently working on improving this, and also working on translating city names.
+
+> ⚠️ The cities are not translated yet, we are working on it.
+
 ## Installation
 
 To install the package, use npm:
