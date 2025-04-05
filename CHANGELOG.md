@@ -1,5 +1,11 @@
 # @sb-codex/react-acl
 
+## 1.1.2
+
+### Patch Changes
+
+- 6eeccc2: README updated: Reflected recent changes and added clearer usage instructions.
+
 ## 1.1.1
 
 ### Patch Changes
