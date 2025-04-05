@@ -1,4 +1,6 @@
-export const countriesDb = {
+import type { CountriesCode, Country } from '../types/common';
+
+export const countriesDb: Record<CountriesCode, Country> = {
   AW: {
     name: {
       en: 'Aruba',

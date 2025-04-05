@@ -1,8 +1,8 @@
 import { citiesDb } from './data';
-import type { CitiesCode } from './types/common';
+import type { CountriesCode } from './types/common';
 
 export const getCitiesByCountry = (
-  countryCode: CitiesCode,
+  countryCode: CountriesCode,
   // locale: Locales = 'en',
 ) => {
   return citiesDb?.[countryCode] ?? [];
