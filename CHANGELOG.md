@@ -1,5 +1,11 @@
 # @sb-codex/react-acl
 
+## 1.1.1
+
+### Patch Changes
+
+- 8d4e321: Optimize bundle size by enabling minification and removing source maps from build output
+
 ## 1.1.0
 
 ### Minor Changes
