@@ -66,3 +66,16 @@ export const getLanguageByCountryCode = (countryCode: CountriesCode) => {
 
   return language;
 };
+export const getCapitalByCountryCode = (countryCode: CountriesCode) => {
+  const country = countriesDb?.[countryCode];
+  if (!country) {
+    return null;
+  }
+
+  const capital = country.capital;
+  if (!capital) {
+    return null;
+  }
+
+  return capital;
+};
