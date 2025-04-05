@@ -17,7 +17,7 @@ describe('CitiesHelper', () => {
     // @ts-expect-error Argument of type 'XX' is not assignable to parameter of type
     const cities = getCitiesByCountry('XX');
 
-    expect(cities).toEqual(undefined);
+    expect(cities).toEqual([]);
   });
 
   test('should return an empty array for a missing country code', () => {
