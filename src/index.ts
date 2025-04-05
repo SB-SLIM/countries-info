@@ -1,2 +1,2 @@
-export { CitiesHelper } from './cities';
+export { getCitiesByCountry } from './cities';
 export { CountriesHelper } from './countries';
