@@ -1,4 +1,3 @@
-import { CountriesCode } from './common';
 export type CountriesCode =
   | 'AW'
   | 'AF'
