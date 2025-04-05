@@ -1,5 +1,3 @@
-import type { Country } from '../types/common';
-
 export const countriesDb = {
   AW: {
     name: {
