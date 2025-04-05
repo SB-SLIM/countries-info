@@ -5,4 +5,5 @@ export {
   getCurrencyByCountryCode,
   getDiallingInfoByCountryCode,
   getLanguageByCountryCode,
+  getCapitalByCountryCode,
 } from './countries';

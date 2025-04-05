@@ -1,6 +1,7 @@
 import { describe, expect, it, test } from 'vitest';
 import { getCountryInfo, getNameByCountryCode } from '../src';
 import {
+  getCapitalByCountryCode,
   getCurrencyByCountryCode,
   getDiallingInfoByCountryCode,
   getLanguageByCountryCode,
@@ -165,6 +166,24 @@ describe('getLanguageByCountryCode', () => {
   it('should return null for an unknown country code', () => {
     // @ts-expect-error Argument of type 'XX' is not assignable to parameter of type CountriesCode
     const result = getLanguageByCountryCode('XX');
+    expect(result).toBeNull();
+  });
+});
+
+describe('getCapitalByCountryCode', () => {
+  it('should return the correct currency for Japan (JP)', () => {
+    const result = getCapitalByCountryCode('JP');
+    expect(result).toEqual('Tokyo');
+  });
+
+  it('should return the correct currency for the United States (US)', () => {
+    const result = getCapitalByCountryCode('US');
+    expect(result).toEqual('Washington D.C.');
+  });
+
+  it('should return null for an unknown country code', () => {
+    // @ts-expect-error Argument of type 'XX' is not assignable to parameter of type CountriesCode
+    const result = getCapitalByCountryCode('XX');
     expect(result).toBeNull();
   });
 });
