@@ -1,8 +1,11 @@
 import { countriesDb } from './data';
-import type { CountriesCode } from './types/common';
+import type { CountriesCode, Country } from './types/common';
 
-export class CountriesHelper {
-  static getCountryByCode(countryCode: CountriesCode) {
-    return countriesDb[countryCode] || null;
+export const getCountryInfo = (countryCode: CountriesCode) => {
+  const country = countriesDb?.[countryCode];
+  if (!country) {
+    return null;
   }
-}
+
+  return country as Country;
+};
