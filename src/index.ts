@@ -1,4 +1,4 @@
-export { getCitiesByCountry } from './cities';
+export { getCitiesByCountryCode } from './cities';
 export {
   getCountryInfo,
   getNameByCountryCode,
