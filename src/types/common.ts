@@ -1,3 +1,4 @@
+import { CountriesCode } from './common';
 export type CountriesCode =
   | 'AW'
   | 'AF'
@@ -248,7 +249,6 @@ export type CountriesCode =
   | 'ZW'
   | 'BQ'
   | 'SH';
-// | "SX" | "SS" | "TL" | "XK" | "ME" | "RS" | "MK" | "GG" | "JE" | "IM";
 
 export type Locales = 'en' | 'fr' | 'ar';
 
@@ -261,9 +261,9 @@ interface TranslatedName {
 export interface Country {
   name: TranslatedName;
   code: CountriesCode;
-  capital?: string | null;
-  language?: string;
-  dialling?: {
+  capital: string | null;
+  language: string;
+  dialling: {
     calling_code?: string[] | null;
     national_prefix?: string | null;
     national_number_lengths?: number[] | null;
@@ -271,8 +271,10 @@ export interface Country {
     international_prefix?: string | number | null;
   };
   flagUrl?: string | null;
-  currency?: {
-    name?: string | null;
-    code?: string | null;
+  currency: {
+    name: string | null;
+    code: string | null;
   };
 }
+
+export type CountriesType = Record<CountriesCode, Country>;
