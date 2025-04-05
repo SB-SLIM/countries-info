@@ -1,5 +1,11 @@
 # @sb-codex/react-acl
 
+## 1.1.0
+
+### Minor Changes
+
+- f721f9d: Add multiple functions to retrieve country-related information:
+
 ## 1.0.2
 
 ### Patch Changes
