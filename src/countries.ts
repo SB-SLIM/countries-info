@@ -10,7 +10,7 @@ export const getCountryInfo = (countryCode: CountriesCode) => {
   return country as Country;
 };
 
-export const getCountryNameByCode = (
+export const getNameByCountryCode = (
   countryCode: CountriesCode,
   locales: Locales = 'en',
 ) => {
@@ -23,5 +23,20 @@ export const getCountryNameByCode = (
   if (!countryName) {
     return null;
   }
+
   return countryName;
+};
+
+export const getCurrencyByCountryCode = (countryCode: CountriesCode) => {
+  const country = countriesDb?.[countryCode];
+  if (!country) {
+    return null;
+  }
+
+  const currency = country.currency;
+  if (!currency) {
+    return null;
+  }
+
+  return currency;
 };

@@ -1,2 +1,2 @@
 export { getCitiesByCountry } from './cities';
-export { getCountryInfo, getCountryNameByCode } from './countries';
+export { getCountryInfo, getNameByCountryCode } from './countries';

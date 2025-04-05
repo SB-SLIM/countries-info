@@ -1,5 +1,6 @@
-import { describe, expect, it, test } from 'vitest';
-import { getCountryInfo, getCountryNameByCode } from '../src';
+import { describe, expect, it, test} from 'vitest';
+import { getCountryInfo, getNameByCountryCode } from '../src';
+import { getCurrencyByCountryCode } from '../src/countries';
 
 describe('getCountryInfo', () => {
   test('should return country details for a valid country code', () => {
@@ -63,31 +64,55 @@ describe('getCountryInfo', () => {
   });
 });
 
-describe('getCountryNameByCode', () => {
+describe('getNameByCountryCode', () => {
   it('should return country name in English by default', () => {
-    const result = getCountryNameByCode('JP');
+    const result = getNameByCountryCode('JP');
     expect(result).toBe('Japan');
   });
 
   it('should return country name in French', () => {
-    const result = getCountryNameByCode('JP', 'fr');
+    const result = getNameByCountryCode('JP', 'fr');
     expect(result).toBe('Japon');
   });
 
   it('should return country name in Arabic', () => {
-    const result = getCountryNameByCode('JP', 'ar');
+    const result = getNameByCountryCode('JP', 'ar');
     expect(result).toBe('اليابان');
   });
 
   it('should return null for unknown locale', () => {
     // @ts-expect-error Argument of type 'en' is not assignable to parameter of type 'en' | 'fr' | 'ar'
-    const result = getCountryNameByCode('JP', 'de');
+    const result = getNameByCountryCode('JP', 'de');
     expect(result).toBeNull();
   });
 
   it('should return null for unknown country code', () => {
     // @ts-expect-error Argument of type 'XX' is not assignable to parameter of type CountriesCode
-    const result = getCountryNameByCode('XX');
+    const result = getNameByCountryCode('XX');
+    expect(result).toBeNull();
+  });
+});
+
+describe('getCurrencyByCountryCode', () => {
+  it('should return the correct currency for Japan (JP)', () => {
+    const result = getCurrencyByCountryCode('JP');
+    expect(result).toEqual({
+      name: 'Japanese Yen',
+      code: 'JPY',
+    });
+  });
+
+  it('should return the correct currency for the United States (US)', () => {
+    const result = getCurrencyByCountryCode('US');
+    expect(result).toEqual({
+      name: 'United States Dollar',
+      code: 'USD',
+    });
+  });
+
+  it('should return null for an unknown country code', () => {
+    // @ts-expect-error Argument of type 'XX' is not assignable to parameter of type CountriesCode
+    const result = getCurrencyByCountryCode('XX');
     expect(result).toBeNull();
   });
 });
