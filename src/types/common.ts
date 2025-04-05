@@ -3,7 +3,7 @@ import type { countriesDb, citiesDb } from '../data';
 export type CountriesCode = keyof typeof countriesDb;
 export type CitiesCode = keyof typeof citiesDb;
 
-export type locales = 'en' | 'fr' | 'ar';
+export type Locales = 'en' | 'fr' | 'ar';
 
 export interface Country {
   name: {
