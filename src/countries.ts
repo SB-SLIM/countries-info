@@ -40,3 +40,16 @@ export const getCurrencyByCountryCode = (countryCode: CountriesCode) => {
 
   return currency;
 };
+export const getDiallingInfoByCountryCode = (countryCode: CountriesCode) => {
+  const country = countriesDb?.[countryCode];
+  if (!country) {
+    return null;
+  }
+
+  const dialling = country.dialling;
+  if (!dialling) {
+    return null;
+  }
+
+  return dialling;
+};

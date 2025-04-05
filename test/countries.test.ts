@@ -1,6 +1,9 @@
-import { describe, expect, it, test} from 'vitest';
+import { describe, expect, it, test } from 'vitest';
 import { getCountryInfo, getNameByCountryCode } from '../src';
-import { getCurrencyByCountryCode } from '../src/countries';
+import {
+  getCurrencyByCountryCode,
+  getDiallingInfoByCountryCode,
+} from '../src/countries';
 
 describe('getCountryInfo', () => {
   test('should return country details for a valid country code', () => {
@@ -113,6 +116,36 @@ describe('getCurrencyByCountryCode', () => {
   it('should return null for an unknown country code', () => {
     // @ts-expect-error Argument of type 'XX' is not assignable to parameter of type CountriesCode
     const result = getCurrencyByCountryCode('XX');
+    expect(result).toBeNull();
+  });
+});
+
+describe('getDiallingInfoByCountryCode', () => {
+  it('should return the correct currency for Japan (JP)', () => {
+    const result = getDiallingInfoByCountryCode('JP');
+    expect(result).toEqual({
+      calling_code: ['81'],
+      national_prefix: '0',
+      national_number_lengths: [9, 10],
+      national_destination_code_lengths: [2],
+      international_prefix: '010',
+    });
+  });
+
+  it('should return the correct currency for the United States (US)', () => {
+    const result = getDiallingInfoByCountryCode('US');
+    expect(result).toEqual({
+      calling_code: ['1'],
+      national_prefix: '1',
+      national_number_lengths: [10],
+      national_destination_code_lengths: [3],
+      international_prefix: '011',
+    });
+  });
+
+  it('should return null for an unknown country code', () => {
+    // @ts-expect-error Argument of type 'XX' is not assignable to parameter of type CountriesCode
+    const result = getDiallingInfoByCountryCode('XX');
     expect(result).toBeNull();
   });
 });
