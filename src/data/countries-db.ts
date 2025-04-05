@@ -1,6 +1,6 @@
-import type { Country } from '../types/common';
+import type { CountriesType } from '../types/common';
 
-export const countriesDb: Record<string, Country> = {
+export const countriesDb: CountriesType = {
   AW: {
     name: {
       en: 'Aruba',
@@ -236,6 +236,7 @@ export const countriesDb: Record<string, Country> = {
       fr: 'Antarctique',
       ar: 'أنتاركتيكا',
     },
+    language: 'No official language',
     code: 'AQ',
     capital: '',
     dialling: {
@@ -3946,7 +3947,8 @@ export const countriesDb: Record<string, Country> = {
       international_prefix: '00',
     },
     currency: {
-      code: 'SNF',
+      code: 'XOF',
+      name: 'West African CFA Franc',
     },
   },
   SG: {
@@ -4086,7 +4088,8 @@ export const countriesDb: Record<string, Country> = {
       international_prefix: '00',
     },
     currency: {
-      code: 'SMP',
+      code: 'EUR',
+      name: 'Euro',
     },
   },
   SO: {
@@ -4168,6 +4171,7 @@ export const countriesDb: Record<string, Country> = {
     },
     currency: {
       code: 'SSP',
+      name: 'South Sudanese Pound',
     },
   },
   ST: {
@@ -4228,7 +4232,8 @@ export const countriesDb: Record<string, Country> = {
       international_prefix: '00',
     },
     currency: {
-      code: 'SKK',
+      code: 'EUR',
+      name: 'Euro',
     },
   },
   SI: {
@@ -4248,7 +4253,8 @@ export const countriesDb: Record<string, Country> = {
       international_prefix: '00',
     },
     currency: {
-      code: 'SIT',
+      code: 'EUR',
+      name: 'Euro',
     },
   },
   SE: {
@@ -4471,7 +4477,8 @@ export const countriesDb: Record<string, Country> = {
       international_prefix: '00',
     },
     currency: {
-      code: 'TMM',
+      code: 'NZD',
+      name: 'New Zealand Dollar',
     },
   },
   TM: {
@@ -4592,7 +4599,8 @@ export const countriesDb: Record<string, Country> = {
       international_prefix: '00',
     },
     currency: {
-      code: 'TVD',
+      code: 'TRY',
+      name: 'Turkish Lira',
     },
   },
   TV: {
@@ -4794,7 +4802,8 @@ export const countriesDb: Record<string, Country> = {
       international_prefix: '00',
     },
     currency: {
-      code: 'VAL',
+      code: 'EUR',
+      name: 'Euro',
     },
   },
   VC: {
@@ -4814,7 +4823,8 @@ export const countriesDb: Record<string, Country> = {
       international_prefix: '011',
     },
     currency: {
-      code: 'VCT',
+      code: 'XCD',
+      name: 'East Caribbean Dollar',
     },
   },
   VE: {
@@ -4833,7 +4843,8 @@ export const countriesDb: Record<string, Country> = {
       international_prefix: '00',
     },
     currency: {
-      code: 'VEB',
+      code: 'VES',
+      name: 'Venezuelan Bolívar Soberano',
     },
   },
   VG: {

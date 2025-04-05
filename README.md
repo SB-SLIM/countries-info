@@ -19,9 +19,19 @@ To install the package, use npm:
 npm install @sb-codex/countries-info
 ```
 
+> ⚠️ The cities are not translated yet, we are working on it.
+
 ## Functions
 
-### 1. `getCountryNameByCode(code: string, language: string): string`
+- `getCountryInfo`
+- `getNameByCountryCode`
+- `getCurrencyByCountryCode`
+- `getDiallingInfoByCountryCode`
+- `getLanguageByCountryCode`
+- `getCapitalByCountryCode`
+- `getCitiesByCountryCode`
+
+### 1. `getNameByCountryCode(code: string, language: string): string`
 
 This function returns the country name in the specified language.
 
@@ -33,9 +43,9 @@ This function returns the country name in the specified language.
 **Example:**
 
 ```typescript
-import { getCountryNameByCode } from '@sb-codex/countries-info';
+import { getNameByCountryCode } from '@sb-codex/countries-info';
 
-const countryName = getCountryNameByCode('TN', 'en');
+const countryName = getNameByCountryCode('TN', 'en');
 console.log(countryName); // Outputs: Tunisia
 ```
 

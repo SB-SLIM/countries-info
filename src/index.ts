@@ -1,2 +1,9 @@
-export { CitiesHelper } from './cities';
-export { CountriesHelper } from './countries';
+export { getCitiesByCountryCode } from './cities';
+export {
+  getCountryInfo,
+  getNameByCountryCode,
+  getCurrencyByCountryCode,
+  getDiallingInfoByCountryCode,
+  getLanguageByCountryCode,
+  getCapitalByCountryCode,
+} from './countries';
