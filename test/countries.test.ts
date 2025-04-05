@@ -3,6 +3,7 @@ import { getCountryInfo, getNameByCountryCode } from '../src';
 import {
   getCurrencyByCountryCode,
   getDiallingInfoByCountryCode,
+  getLanguageByCountryCode,
 } from '../src/countries';
 
 describe('getCountryInfo', () => {
@@ -146,6 +147,24 @@ describe('getDiallingInfoByCountryCode', () => {
   it('should return null for an unknown country code', () => {
     // @ts-expect-error Argument of type 'XX' is not assignable to parameter of type CountriesCode
     const result = getDiallingInfoByCountryCode('XX');
+    expect(result).toBeNull();
+  });
+});
+
+describe('getLanguageByCountryCode', () => {
+  it('should return the correct currency for Japan (JP)', () => {
+    const result = getLanguageByCountryCode('JP');
+    expect(result).toEqual('Japanese');
+  });
+
+  it('should return the correct currency for the United States (US)', () => {
+    const result = getLanguageByCountryCode('US');
+    expect(result).toEqual('English');
+  });
+
+  it('should return null for an unknown country code', () => {
+    // @ts-expect-error Argument of type 'XX' is not assignable to parameter of type CountriesCode
+    const result = getLanguageByCountryCode('XX');
     expect(result).toBeNull();
   });
 });

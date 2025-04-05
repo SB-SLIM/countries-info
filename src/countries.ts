@@ -53,3 +53,16 @@ export const getDiallingInfoByCountryCode = (countryCode: CountriesCode) => {
 
   return dialling;
 };
+export const getLanguageByCountryCode = (countryCode: CountriesCode) => {
+  const country = countriesDb?.[countryCode];
+  if (!country) {
+    return null;
+  }
+
+  const language = country.language;
+  if (!language) {
+    return null;
+  }
+
+  return language;
+};
