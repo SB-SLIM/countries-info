@@ -31,7 +31,6 @@ npm install @sb-codex/countries-info
 - `getCapitalByCountryCode`
 - `getCitiesByCountryCode`
 
-
 ### 1. `getNameByCountryCode(code: string, language: string): string`
 
 This function returns the country name in the specified language.
