@@ -1,7 +1,7 @@
-import { describe, expect, test } from 'vitest';
-import { getCountryInfo } from '../src';
+import { describe, expect, it, test } from 'vitest';
+import { getCountryInfo, getCountryNameByCode } from '../src';
 
-describe('CountriesHelper', () => {
+describe('getCountryInfo', () => {
   test('should return country details for a valid country code', () => {
     const country = getCountryInfo('JP');
     expect(country).toEqual({
@@ -28,7 +28,7 @@ describe('CountriesHelper', () => {
   });
 
   test('should return null for an invalid country code', () => {
-    // @ts-expect-error Argument of type 'XX' is not assignable to parameter of type
+    // @ts-expect-error Argument of type 'XX' is not assignable to parameter of type CountriesCode
     const country = getCountryInfo('XX'); // Non-existent country
     expect(country).toBeNull();
   });
@@ -60,5 +60,34 @@ describe('CountriesHelper', () => {
   test('should return correct dialing codes', () => {
     const country = getCountryInfo('JP');
     expect(country?.dialling?.calling_code).toEqual(['81']);
+  });
+});
+
+describe('getCountryNameByCode', () => {
+  it('should return country name in English by default', () => {
+    const result = getCountryNameByCode('JP');
+    expect(result).toBe('Japan');
+  });
+
+  it('should return country name in French', () => {
+    const result = getCountryNameByCode('JP', 'fr');
+    expect(result).toBe('Japon');
+  });
+
+  it('should return country name in Arabic', () => {
+    const result = getCountryNameByCode('JP', 'ar');
+    expect(result).toBe('اليابان');
+  });
+
+  it('should return null for unknown locale', () => {
+    // @ts-expect-error Argument of type 'en' is not assignable to parameter of type 'en' | 'fr' | 'ar'
+    const result = getCountryNameByCode('JP', 'de');
+    expect(result).toBeNull();
+  });
+
+  it('should return null for unknown country code', () => {
+    // @ts-expect-error Argument of type 'XX' is not assignable to parameter of type CountriesCode
+    const result = getCountryNameByCode('XX');
+    expect(result).toBeNull();
   });
 });
