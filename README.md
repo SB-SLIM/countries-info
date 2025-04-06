@@ -3,6 +3,11 @@
 
 A helper package to retrieve detailed information about countries based on their country code. You can access data such as country names, cities, capitals, currencies, and more, by specifying the country code and language.
 
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/SB-SLIM/countries-info/blob/main/LICENSE)
+![(Runtime) Build and Test](https://github.com/SB-SLIM/countries-info/actions/workflows/ci.yml/badge.svg)
+![npm version](https://img.shields.io/npm/v/@sb-codex/countries-info)
+![npm download](https://img.shields.io/npm/dm/@sb-codex/countries-info)
+
 ## Features
 
 - Retrieve country names in different languages.
