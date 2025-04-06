@@ -32,8 +32,6 @@ To install the package, use npm:
 npm install @sb-codex/countries-info
 ```
 
-> ⚠️ The cities are not translated yet, we are working on it.
-
 ## Functions
 
 - `getCountryInfo`
