@@ -277,3 +277,4 @@ export interface Country {
 }
 
 export type CountriesType = Record<CountriesCode, Country>;
+export type CitiesType = Record<CountriesCode, string[]>;

@@ -31,7 +31,7 @@ export default defineConfig([
       ],
       '@typescript-eslint/consistent-type-exports': 2,
       'jsdoc/valid-types': 2,
-      'jsdoc/require-returns': 2,
+      'jsdoc/require-returns': 3,
       'jsdoc/require-param-type': 2,
     },
   },
