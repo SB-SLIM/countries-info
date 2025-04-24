@@ -1,27 +1,27 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { createRequire } from 'node:module';
+import { fileURLToPath } from 'url';
 import type { CitiesType, Locales } from '../../types/common';
 
-const require = createRequire(import.meta.url);
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-const folderPath = path.resolve(__dirname, './');
+const folderPath = path.resolve(__dirname, './db');
 
 /**
  * loadCityData - Loads city data from JSON files in the specified folder.
-*/
+ */
 function loadCityDataSync() {
-  console.log('🚀 ~ folderPath:', folderPath);
   const files = fs.readdirSync(folderPath);
-  console.log("🚀 ~ loadCityDataSync ~ files:", files)
+
   const data: Record<string, unknown> = {};
 
   for (const file of files) {
-    if (file.endsWith('.ts')) {
-      const lang = path.basename(file, '.ts');
+    if (file.endsWith('.json')) {
+      const lang = path.basename(file, '.json');
       const filePath = path.join(folderPath, file);
-      const module = require(filePath);
-      data[lang] = module.citiesDb; 
+      const fileContent = fs.readFileSync(filePath, 'utf-8');
+      data[lang] = JSON.parse(fileContent);
     }
   }
 
@@ -29,6 +29,5 @@ function loadCityDataSync() {
 }
 
 const citiesDb = loadCityDataSync();
-console.log('🚀 ~ citiesDb:', citiesDb);
 
 export default citiesDb;
