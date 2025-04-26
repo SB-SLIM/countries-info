@@ -19,8 +19,7 @@
     /* If transpiling with TypeScript: */
     "module": "Preserve",
 
-    "lib": ["DOM", "ESNext"],
-    "jsx": "react",
+    "lib": ["ESNext"],
 
     "noEmit": true
   }
