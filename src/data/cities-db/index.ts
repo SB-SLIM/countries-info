@@ -2,8 +2,9 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'url';
 import type { CitiesType, Locales } from '../../types/common';
-import { __dirname } from '../../utils/dirname';
+import { getDirname } from '../../utils/getDirname';
 
+const __dirname = getDirname(import.meta.url);
 const folderPath = path.resolve(__dirname, './db');
 
 /**

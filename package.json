@@ -67,8 +67,7 @@
   "exports": {
     "./package.json": "./package.json",
     ".": {
-      "import": "./dist/esm/index.js",
-      "default": "./dist/cjs/index.cjs"
+      "import": "./dist/index.js"
     }
   },
   "directories": {
