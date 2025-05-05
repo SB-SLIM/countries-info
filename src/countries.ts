@@ -10,7 +10,7 @@ export const getCountryInfo = async (
   if (!country) {
     return null;
   }
-  
+
   return formatCountry(country, locale);
 };
 

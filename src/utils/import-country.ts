@@ -1,4 +1,4 @@
-import type { CountriesCode, Country } from "../types/common";
+import type { CountriesCode, Country } from '../types/common';
 
 export const importCountry = async (
   countryCode: CountriesCode,

@@ -173,7 +173,11 @@ console.log(countryInfo);
 /*
   Outputs:
   {
-    name: 'Tunisia',
+    name: name: {
+      en: 'Tunisia',
+      fr: 'Tunisie',
+      ar: 'تونس',
+    },
     capital: 'Tunis',
     language: 'Arabic',
     currency: { name: 'Tunisian Dinar', code: 'TND' },

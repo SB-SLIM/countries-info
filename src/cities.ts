@@ -6,7 +6,7 @@ export const getCitiesByCountryCode = async (
   locale: Locales = 'en',
 ) => {
   const country = await importCountry(countryCode);
-  
+
   if (!country) {
     return [];
   }
