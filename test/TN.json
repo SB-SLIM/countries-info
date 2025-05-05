@@ -1,0 +1,741 @@
+{
+  "name": { "en": "Tunisia", "fr": "Tunisie", "ar": "تونس" },
+  "code": "TN",
+  "capital": "Tunis",
+  "language": "Arabic",
+  "dialling": {
+    "calling_code": ["216"],
+    "national_prefix": null,
+    "national_number_lengths": [8],
+    "national_destination_code_lengths": [2],
+    "international_prefix": "00"
+  },
+  "currency": { "name": "Tunisian Dinar", "code": "TND" },
+  "cities": {
+    "TUNIS-TN": {
+      "name": { "en": "Tunis", "ar": "تونس", "fr": "Tunis" },
+      "code": "TUNIS-TN",
+      "countryCode": "TN"
+    },
+    "SIDI-BOUZID-TN": {
+      "name": { "en": "Sidi Bouzid", "ar": "", "fr": "" },
+      "code": "SIDI-BOUZID-TN",
+      "countryCode": "TN"
+    },
+    "SFAX-TN": {
+      "name": { "en": "Sfax", "ar": "صفاقس", "fr": "Sfax" },
+      "code": "SFAX-TN",
+      "countryCode": "TN"
+    },
+    "SOUSSE-TN": {
+      "name": { "en": "Sousse", "ar": "", "fr": "" },
+      "code": "SOUSSE-TN",
+      "countryCode": "TN"
+    },
+    "KAIROUAN-TN": {
+      "name": { "en": "Kairouan", "ar": "", "fr": "" },
+      "code": "KAIROUAN-TN",
+      "countryCode": "TN"
+    },
+    "METOUIA-TN": {
+      "name": { "en": "Metouia", "ar": "", "fr": "" },
+      "code": "METOUIA-TN",
+      "countryCode": "TN"
+    },
+    "KEBILI-TN": {
+      "name": { "en": "Kebili", "ar": "", "fr": "" },
+      "code": "KEBILI-TN",
+      "countryCode": "TN"
+    },
+    "SUKRAH-TN": {
+      "name": { "en": "Sukrah", "ar": "", "fr": "" },
+      "code": "SUKRAH-TN",
+      "countryCode": "TN"
+    },
+    "GABES-TN": {
+      "name": { "en": "Gabes", "ar": "", "fr": "" },
+      "code": "GABES-TN",
+      "countryCode": "TN"
+    },
+    "ARIANA-TN": {
+      "name": { "en": "Ariana", "ar": "", "fr": "" },
+      "code": "ARIANA-TN",
+      "countryCode": "TN"
+    },
+    "SAKIET-ED-DAIER-TN": {
+      "name": { "en": "Sakiet ed Daier", "ar": "", "fr": "" },
+      "code": "SAKIET-ED-DAIER-TN",
+      "countryCode": "TN"
+    },
+    "GAFSA-TN": {
+      "name": { "en": "Gafsa", "ar": "", "fr": "" },
+      "code": "GAFSA-TN",
+      "countryCode": "TN"
+    },
+    "MSAKEN-TN": {
+      "name": { "en": "Msaken", "ar": "", "fr": "" },
+      "code": "MSAKEN-TN",
+      "countryCode": "TN"
+    },
+    "MEDENINE-TN": {
+      "name": { "en": "Medenine", "ar": "", "fr": "" },
+      "code": "MEDENINE-TN",
+      "countryCode": "TN"
+    },
+    "BEJA-TN": {
+      "name": { "en": "Beja", "ar": "", "fr": "" },
+      "code": "BEJA-TN",
+      "countryCode": "TN"
+    },
+    "KASSERINE-TN": {
+      "name": { "en": "Kasserine", "ar": "", "fr": "" },
+      "code": "KASSERINE-TN",
+      "countryCode": "TN"
+    },
+    "RADES-TN": {
+      "name": { "en": "Rades", "ar": "", "fr": "" },
+      "code": "RADES-TN",
+      "countryCode": "TN"
+    },
+    "HAMMAMET-TN": {
+      "name": { "en": "Hammamet", "ar": "", "fr": "" },
+      "code": "HAMMAMET-TN",
+      "countryCode": "TN"
+    },
+    "TATAOUINE-TN": {
+      "name": { "en": "Tataouine", "ar": "", "fr": "" },
+      "code": "TATAOUINE-TN",
+      "countryCode": "TN"
+    },
+    "MONASTIR-TN": {
+      "name": { "en": "Monastir", "ar": "", "fr": "" },
+      "code": "MONASTIR-TN",
+      "countryCode": "TN"
+    },
+    "LA-MARSA-TN": {
+      "name": { "en": "La Marsa", "ar": "", "fr": "" },
+      "code": "LA-MARSA-TN",
+      "countryCode": "TN"
+    },
+    "BEN-AROUS-TN": {
+      "name": { "en": "Ben Arous", "ar": "", "fr": "" },
+      "code": "BEN-AROUS-TN",
+      "countryCode": "TN"
+    },
+    "SAKIET-EZ-ZIT-TN": {
+      "name": { "en": "Sakiet ez Zit", "ar": "", "fr": "" },
+      "code": "SAKIET-EZ-ZIT-TN",
+      "countryCode": "TN"
+    },
+    "ZARZIS-TN": {
+      "name": { "en": "Zarzis", "ar": "", "fr": "" },
+      "code": "ZARZIS-TN",
+      "countryCode": "TN"
+    },
+    "BEN-GARDANE-TN": {
+      "name": { "en": "Ben Gardane", "ar": "", "fr": "" },
+      "code": "BEN-GARDANE-TN",
+      "countryCode": "TN"
+    },
+    "MAHDIA-TN": {
+      "name": { "en": "Mahdia", "ar": "", "fr": "" },
+      "code": "MAHDIA-TN",
+      "countryCode": "TN"
+    },
+    "HOUMT-SOUK-TN": {
+      "name": { "en": "Houmt Souk", "ar": "", "fr": "" },
+      "code": "HOUMT-SOUK-TN",
+      "countryCode": "TN"
+    },
+    "FOUCHANA-TN": {
+      "name": { "en": "Fouchana", "ar": "", "fr": "" },
+      "code": "FOUCHANA-TN",
+      "countryCode": "TN"
+    },
+    "LE-KRAM-TN": {
+      "name": { "en": "Le Kram", "ar": "", "fr": "" },
+      "code": "LE-KRAM-TN",
+      "countryCode": "TN"
+    },
+    "EL-KEF-TN": {
+      "name": { "en": "El Kef", "ar": "", "fr": "" },
+      "code": "EL-KEF-TN",
+      "countryCode": "TN"
+    },
+    "EL-HAMMA-TN": {
+      "name": { "en": "El Hamma", "ar": "", "fr": "" },
+      "code": "EL-HAMMA-TN",
+      "countryCode": "TN"
+    },
+    "NABEUL-TN": {
+      "name": { "en": "Nabeul", "ar": "", "fr": "" },
+      "code": "NABEUL-TN",
+      "countryCode": "TN"
+    },
+    "LE-BARDO-TN": {
+      "name": { "en": "Le Bardo", "ar": "", "fr": "" },
+      "code": "LE-BARDO-TN",
+      "countryCode": "TN"
+    },
+    "DJEMMAL-TN": {
+      "name": { "en": "Djemmal", "ar": "", "fr": "" },
+      "code": "DJEMMAL-TN",
+      "countryCode": "TN"
+    },
+    "KORBA-TN": {
+      "name": { "en": "Korba", "ar": "", "fr": "" },
+      "code": "KORBA-TN",
+      "countryCode": "TN"
+    },
+    "MENZEL-TEMIME-TN": {
+      "name": { "en": "Menzel Temime", "ar": "", "fr": "" },
+      "code": "MENZEL-TEMIME-TN",
+      "countryCode": "TN"
+    },
+    "GHARDIMAOU-TN": {
+      "name": { "en": "Ghardimaou", "ar": "", "fr": "" },
+      "code": "GHARDIMAOU-TN",
+      "countryCode": "TN"
+    },
+    "MIDOUN-TN": {
+      "name": { "en": "Midoun", "ar": "", "fr": "" },
+      "code": "MIDOUN-TN",
+      "countryCode": "TN"
+    },
+    "MENZEL-BOURGUIBA-TN": {
+      "name": { "en": "Menzel Bourguiba", "ar": "", "fr": "" },
+      "code": "MENZEL-BOURGUIBA-TN",
+      "countryCode": "TN"
+    },
+    "MANOUBA-TN": {
+      "name": { "en": "Manouba", "ar": "", "fr": "" },
+      "code": "MANOUBA-TN",
+      "countryCode": "TN"
+    },
+    "KELIBIA-TN": {
+      "name": { "en": "Kelibia", "ar": "", "fr": "" },
+      "code": "KELIBIA-TN",
+      "countryCode": "TN"
+    },
+    "RASS-EL-DJEBEL-TN": {
+      "name": { "en": "Rass el Djebel", "ar": "", "fr": "" },
+      "code": "RASS-EL-DJEBEL-TN",
+      "countryCode": "TN"
+    },
+    "OUED-LILL-TN": {
+      "name": { "en": "Oued Lill", "ar": "", "fr": "" },
+      "code": "OUED-LILL-TN",
+      "countryCode": "TN"
+    },
+    "MOKNINE-TN": {
+      "name": { "en": "Moknine", "ar": "", "fr": "" },
+      "code": "MOKNINE-TN",
+      "countryCode": "TN"
+    },
+    "BIR-ALI-BEN-KHALIFA-TN": {
+      "name": { "en": "Bir Ali Ben Khalifa", "ar": "", "fr": "" },
+      "code": "BIR-ALI-BEN-KHALIFA-TN",
+      "countryCode": "TN"
+    },
+    "KELAA-KEBIRA-TN": {
+      "name": { "en": "Kelaa Kebira", "ar": "", "fr": "" },
+      "code": "KELAA-KEBIRA-TN",
+      "countryCode": "TN"
+    },
+    "EL-JEM-TN": {
+      "name": { "en": "El Jem", "ar": "", "fr": "" },
+      "code": "EL-JEM-TN",
+      "countryCode": "TN"
+    },
+    "TEBOURBA-TN": {
+      "name": { "en": "Tebourba", "ar": "", "fr": "" },
+      "code": "TEBOURBA-TN",
+      "countryCode": "TN"
+    },
+    "KSAR-HELLAL-TN": {
+      "name": { "en": "Ksar Hellal", "ar": "", "fr": "" },
+      "code": "KSAR-HELLAL-TN",
+      "countryCode": "TN"
+    },
+    "DOUZ-TN": {
+      "name": { "en": "Douz", "ar": "", "fr": "" },
+      "code": "DOUZ-TN",
+      "countryCode": "TN"
+    },
+    "BIZERTE-TN": {
+      "name": { "en": "Bizerte", "ar": "", "fr": "" },
+      "code": "BIZERTE-TN",
+      "countryCode": "TN"
+    },
+    "JENDOUBA-TN": {
+      "name": { "en": "Jendouba", "ar": "", "fr": "" },
+      "code": "JENDOUBA-TN",
+      "countryCode": "TN"
+    },
+    "LA-GOULETTE-TN": {
+      "name": { "en": "La Goulette", "ar": "", "fr": "" },
+      "code": "LA-GOULETTE-TN",
+      "countryCode": "TN"
+    },
+    "JEDEIDA-TN": {
+      "name": { "en": "Jedeida", "ar": "", "fr": "" },
+      "code": "JEDEIDA-TN",
+      "countryCode": "TN"
+    },
+    "SOLIMAN-TN": {
+      "name": { "en": "Soliman", "ar": "", "fr": "" },
+      "code": "SOLIMAN-TN",
+      "countryCode": "TN"
+    },
+    "HAMMAM-SOUSSE-TN": {
+      "name": { "en": "Hammam Sousse", "ar": "", "fr": "" },
+      "code": "HAMMAM-SOUSSE-TN",
+      "countryCode": "TN"
+    },
+    "SBIBA-TN": {
+      "name": { "en": "Sbiba", "ar": "", "fr": "" },
+      "code": "SBIBA-TN",
+      "countryCode": "TN"
+    },
+    "TABARKA-TN": {
+      "name": { "en": "Tabarka", "ar": "", "fr": "" },
+      "code": "TABARKA-TN",
+      "countryCode": "TN"
+    },
+    "SEJENANE-TN": {
+      "name": { "en": "Sejenane", "ar": "", "fr": "" },
+      "code": "SEJENANE-TN",
+      "countryCode": "TN"
+    },
+    "METLAOUI-TN": {
+      "name": { "en": "Metlaoui", "ar": "", "fr": "" },
+      "code": "METLAOUI-TN",
+      "countryCode": "TN"
+    },
+    "HAMMAM-LIF-TN": {
+      "name": { "en": "Hammam-Lif", "ar": "", "fr": "" },
+      "code": "HAMMAM-LIF-TN",
+      "countryCode": "TN"
+    },
+    "TEBOULBA-TN": {
+      "name": { "en": "Teboulba", "ar": "", "fr": "" },
+      "code": "TEBOULBA-TN",
+      "countryCode": "TN"
+    },
+    "TOZEUR-TN": {
+      "name": { "en": "Tozeur", "ar": "", "fr": "" },
+      "code": "TOZEUR-TN",
+      "countryCode": "TN"
+    },
+    "BENI-KHIAR-TN": {
+      "name": { "en": "Beni Khiar", "ar": "", "fr": "" },
+      "code": "BENI-KHIAR-TN",
+      "countryCode": "TN"
+    },
+    "DAR-CHABANNE-TN": {
+      "name": { "en": "Dar Chabanne", "ar": "", "fr": "" },
+      "code": "DAR-CHABANNE-TN",
+      "countryCode": "TN"
+    },
+    "AINE-DRAHAM-TN": {
+      "name": { "en": "Aine Draham", "ar": "", "fr": "" },
+      "code": "AINE-DRAHAM-TN",
+      "countryCode": "TN"
+    },
+    "BOU-SALEM-TN": {
+      "name": { "en": "Bou Salem", "ar": "", "fr": "" },
+      "code": "BOU-SALEM-TN",
+      "countryCode": "TN"
+    },
+    "EZ-ZAHRA-TN": {
+      "name": { "en": "Ez Zahra", "ar": "", "fr": "" },
+      "code": "EZ-ZAHRA-TN",
+      "countryCode": "TN"
+    },
+    "KALAA-SRIRA-TN": {
+      "name": { "en": "Kalaa Srira", "ar": "", "fr": "" },
+      "code": "KALAA-SRIRA-TN",
+      "countryCode": "TN"
+    },
+    "SKHIRA-TN": {
+      "name": { "en": "Skhira", "ar": "", "fr": "" },
+      "code": "SKHIRA-TN",
+      "countryCode": "TN"
+    },
+    "AKOUDA-TN": {
+      "name": { "en": "Akouda", "ar": "", "fr": "" },
+      "code": "AKOUDA-TN",
+      "countryCode": "TN"
+    },
+    "EL-KSAR-TN": {
+      "name": { "en": "El Ksar", "ar": "", "fr": "" },
+      "code": "EL-KSAR-TN",
+      "countryCode": "TN"
+    },
+    "MATEUR-TN": {
+      "name": { "en": "Mateur", "ar": "", "fr": "" },
+      "code": "MATEUR-TN",
+      "countryCode": "TN"
+    },
+    "SILIANA-TN": {
+      "name": { "en": "Siliana", "ar": "", "fr": "" },
+      "code": "SILIANA-TN",
+      "countryCode": "TN"
+    },
+    "RHENNOUCH-TN": {
+      "name": { "en": "Rhennouch", "ar": "", "fr": "" },
+      "code": "RHENNOUCH-TN",
+      "countryCode": "TN"
+    },
+    "DAHMANI-TN": {
+      "name": { "en": "Dahmani", "ar": "", "fr": "" },
+      "code": "DAHMANI-TN",
+      "countryCode": "TN"
+    },
+    "EL-ALIA-TN": {
+      "name": { "en": "El Alia", "ar": "", "fr": "" },
+      "code": "EL-ALIA-TN",
+      "countryCode": "TN"
+    },
+    "AR-RUDAYYIF-TN": {
+      "name": { "en": "Ar Rudayyif", "ar": "", "fr": "" },
+      "code": "AR-RUDAYYIF-TN",
+      "countryCode": "TN"
+    },
+    "MEGRINE-TN": {
+      "name": { "en": "Megrine", "ar": "", "fr": "" },
+      "code": "MEGRINE-TN",
+      "countryCode": "TN"
+    },
+    "KSOUR-ESSAF-TN": {
+      "name": { "en": "Ksour Essaf", "ar": "", "fr": "" },
+      "code": "KSOUR-ESSAF-TN",
+      "countryCode": "TN"
+    },
+    "ZAOUIET-SOUSSE-TN": {
+      "name": { "en": "Zaouiet Sousse", "ar": "", "fr": "" },
+      "code": "ZAOUIET-SOUSSE-TN",
+      "countryCode": "TN"
+    },
+    "CHEBBA-TN": {
+      "name": { "en": "Chebba", "ar": "", "fr": "" },
+      "code": "CHEBBA-TN",
+      "countryCode": "TN"
+    },
+    "GROMBALIA-TN": {
+      "name": { "en": "Grombalia", "ar": "", "fr": "" },
+      "code": "GROMBALIA-TN",
+      "countryCode": "TN"
+    },
+    "AJIM-TN": {
+      "name": { "en": "Ajim", "ar": "", "fr": "" },
+      "code": "AJIM-TN",
+      "countryCode": "TN"
+    },
+    "FERIANA-TN": {
+      "name": { "en": "Feriana", "ar": "", "fr": "" },
+      "code": "FERIANA-TN",
+      "countryCode": "TN"
+    },
+    "EL-MAKNASSI-TN": {
+      "name": { "en": "El Maknassi", "ar": "", "fr": "" },
+      "code": "EL-MAKNASSI-TN",
+      "countryCode": "TN"
+    },
+    "BENI-KHALLED-TN": {
+      "name": { "en": "Beni Khalled", "ar": "", "fr": "" },
+      "code": "BENI-KHALLED-TN",
+      "countryCode": "TN"
+    },
+    "MEDJEZ-EL-BAB-TN": {
+      "name": { "en": "Medjez el Bab", "ar": "", "fr": "" },
+      "code": "MEDJEZ-EL-BAB-TN",
+      "countryCode": "TN"
+    },
+    "TAKELSA-TN": {
+      "name": { "en": "Takelsa", "ar": "", "fr": "" },
+      "code": "TAKELSA-TN",
+      "countryCode": "TN"
+    },
+    "TABURSUQ-TN": {
+      "name": { "en": "Tabursuq", "ar": "", "fr": "" },
+      "code": "TABURSUQ-TN",
+      "countryCode": "TN"
+    },
+    "OUARDENINE-TN": {
+      "name": { "en": "Ouardenine", "ar": "", "fr": "" },
+      "code": "OUARDENINE-TN",
+      "countryCode": "TN"
+    },
+    "MOULARES-TN": {
+      "name": { "en": "Moulares", "ar": "", "fr": "" },
+      "code": "MOULARES-TN",
+      "countryCode": "TN"
+    },
+    "NEFTA-TN": {
+      "name": { "en": "Nefta", "ar": "", "fr": "" },
+      "code": "NEFTA-TN",
+      "countryCode": "TN"
+    },
+    "CARTHAGE-TN": {
+      "name": { "en": "Carthage", "ar": "", "fr": "" },
+      "code": "CARTHAGE-TN",
+      "countryCode": "TN"
+    },
+    "TINJA-TN": {
+      "name": { "en": "Tinja", "ar": "", "fr": "" },
+      "code": "TINJA-TN",
+      "countryCode": "TN"
+    },
+    "ZAGHOUAN-TN": {
+      "name": { "en": "Zaghouan", "ar": "", "fr": "" },
+      "code": "ZAGHOUAN-TN",
+      "countryCode": "TN"
+    },
+    "SBEITLA-TN": {
+      "name": { "en": "Sbeitla", "ar": "", "fr": "" },
+      "code": "SBEITLA-TN",
+      "countryCode": "TN"
+    },
+    "LA-MORNAGHIA-TN": {
+      "name": { "en": "La Mornaghia", "ar": "", "fr": "" },
+      "code": "LA-MORNAGHIA-TN",
+      "countryCode": "TN"
+    },
+    "RHAR-EL-MELAH-TN": {
+      "name": { "en": "Rhar el Melah", "ar": "", "fr": "" },
+      "code": "RHAR-EL-MELAH-TN",
+      "countryCode": "TN"
+    },
+    "TAJEROUINE-TN": {
+      "name": { "en": "Tajerouine", "ar": "", "fr": "" },
+      "code": "TAJEROUINE-TN",
+      "countryCode": "TN"
+    },
+    "MENZEL-ABDERHAMAN-TN": {
+      "name": { "en": "Menzel Abderhaman", "ar": "", "fr": "" },
+      "code": "MENZEL-ABDERHAMAN-TN",
+      "countryCode": "TN"
+    },
+    "SAHLINE-TN": {
+      "name": { "en": "Sahline", "ar": "", "fr": "" },
+      "code": "SAHLINE-TN",
+      "countryCode": "TN"
+    },
+    "MENNZEL-BOU-ZELFA-TN": {
+      "name": { "en": "Mennzel Bou Zelfa", "ar": "", "fr": "" },
+      "code": "MENNZEL-BOU-ZELFA-TN",
+      "countryCode": "TN"
+    },
+    "GALAAT-EL-ANDELESS-TN": {
+      "name": { "en": "Galaat el Andeless", "ar": "", "fr": "" },
+      "code": "GALAAT-EL-ANDELESS-TN",
+      "countryCode": "TN"
+    },
+    "BANBALAH-TN": {
+      "name": { "en": "Banbalah", "ar": "", "fr": "" },
+      "code": "BANBALAH-TN",
+      "countryCode": "TN"
+    },
+    "BEKALTA-TN": {
+      "name": { "en": "Bekalta", "ar": "", "fr": "" },
+      "code": "BEKALTA-TN",
+      "countryCode": "TN"
+    },
+    "MARETH-TN": {
+      "name": { "en": "Mareth", "ar": "", "fr": "" },
+      "code": "MARETH-TN",
+      "countryCode": "TN"
+    },
+    "GHOMRASSEN-TN": {
+      "name": { "en": "Ghomrassen", "ar": "", "fr": "" },
+      "code": "GHOMRASSEN-TN",
+      "countryCode": "TN"
+    },
+    "MAHIRES-TN": {
+      "name": { "en": "Mahires", "ar": "", "fr": "" },
+      "code": "MAHIRES-TN",
+      "countryCode": "TN"
+    },
+    "GOUBELLAT-TN": {
+      "name": { "en": "Goubellat", "ar": "", "fr": "" },
+      "code": "GOUBELLAT-TN",
+      "countryCode": "TN"
+    },
+    "GAMMARTH-TN": {
+      "name": { "en": "Gammarth", "ar": "", "fr": "" },
+      "code": "GAMMARTH-TN",
+      "countryCode": "TN"
+    },
+    "BENNANE-TN": {
+      "name": { "en": "Bennane", "ar": "", "fr": "" },
+      "code": "BENNANE-TN",
+      "countryCode": "TN"
+    },
+    "EL-GUETAR-TN": {
+      "name": { "en": "El Guetar", "ar": "", "fr": "" },
+      "code": "EL-GUETAR-TN",
+      "countryCode": "TN"
+    },
+    "THALA-TN": {
+      "name": { "en": "Thala", "ar": "", "fr": "" },
+      "code": "THALA-TN",
+      "countryCode": "TN"
+    },
+    "HAMMAM-EL-RHEZEZ-TN": {
+      "name": { "en": "Hammam el Rhezez", "ar": "", "fr": "" },
+      "code": "HAMMAM-EL-RHEZEZ-TN",
+      "countryCode": "TN"
+    },
+    "TESTOUR-TN": {
+      "name": { "en": "Testour", "ar": "", "fr": "" },
+      "code": "TESTOUR-TN",
+      "countryCode": "TN"
+    },
+    "BOU-ARADA-TN": {
+      "name": { "en": "Bou Arada", "ar": "", "fr": "" },
+      "code": "BOU-ARADA-TN",
+      "countryCode": "TN"
+    },
+    "KSIBET-EL-MEDIOUNI-TN": {
+      "name": { "en": "Ksibet el Mediouni", "ar": "", "fr": "" },
+      "code": "KSIBET-EL-MEDIOUNI-TN",
+      "countryCode": "TN"
+    },
+    "MAKTAR-TN": {
+      "name": { "en": "Maktar", "ar": "", "fr": "" },
+      "code": "MAKTAR-TN",
+      "countryCode": "TN"
+    },
+    "MESSADINE-TN": {
+      "name": { "en": "Messadine", "ar": "", "fr": "" },
+      "code": "MESSADINE-TN",
+      "countryCode": "TN"
+    },
+    "M'DHILLA-TN": {
+      "name": { "en": "M'dhilla", "ar": "", "fr": "" },
+      "code": "M'DHILLA-TN",
+      "countryCode": "TN"
+    },
+    "SEIADA-TN": {
+      "name": { "en": "Seiada", "ar": "", "fr": "" },
+      "code": "SEIADA-TN",
+      "countryCode": "TN"
+    },
+    "WADHRAF-TN": {
+      "name": { "en": "Wadhraf", "ar": "", "fr": "" },
+      "code": "WADHRAF-TN",
+      "countryCode": "TN"
+    },
+    "BOU-ARKOUB-TN": {
+      "name": { "en": "Bou Arkoub", "ar": "", "fr": "" },
+      "code": "BOU-ARKOUB-TN",
+      "countryCode": "TN"
+    },
+    "AS-SARS-TN": {
+      "name": { "en": "As Sars", "ar": "", "fr": "" },
+      "code": "AS-SARS-TN",
+      "countryCode": "TN"
+    },
+    "ZRIBA-VILLAGE-TN": {
+      "name": { "en": "Zriba-Village", "ar": "", "fr": "" },
+      "code": "ZRIBA-VILLAGE-TN",
+      "countryCode": "TN"
+    },
+    "BOU-MERDES-TN": {
+      "name": { "en": "Bou Merdes", "ar": "", "fr": "" },
+      "code": "BOU-MERDES-TN",
+      "countryCode": "TN"
+    },
+    "ER-REGUEB-TN": {
+      "name": { "en": "Er Regueb", "ar": "", "fr": "" },
+      "code": "ER-REGUEB-TN",
+      "countryCode": "TN"
+    },
+    "SIDI-TABET-TN": {
+      "name": { "en": "Sidi Tabet", "ar": "", "fr": "" },
+      "code": "SIDI-TABET-TN",
+      "countryCode": "TN"
+    },
+    "ENFIDA-TN": {
+      "name": { "en": "Enfida", "ar": "", "fr": "" },
+      "code": "ENFIDA-TN",
+      "countryCode": "TN"
+    },
+    "REJICHE-TN": {
+      "name": { "en": "Rejiche", "ar": "", "fr": "" },
+      "code": "REJICHE-TN",
+      "countryCode": "TN"
+    },
+    "OUSSELTIA-TN": {
+      "name": { "en": "Ousseltia", "ar": "", "fr": "" },
+      "code": "OUSSELTIA-TN",
+      "countryCode": "TN"
+    },
+    "HAJEB-EL-AIOUN-TN": {
+      "name": { "en": "Hajeb el Aioun", "ar": "", "fr": "" },
+      "code": "HAJEB-EL-AIOUN-TN",
+      "countryCode": "TN"
+    },
+    "SIDI-BOU-ALI-TN": {
+      "name": { "en": "Sidi Bou Ali", "ar": "", "fr": "" },
+      "code": "SIDI-BOU-ALI-TN",
+      "countryCode": "TN"
+    },
+    "GAFOUR-TN": {
+      "name": { "en": "Gafour", "ar": "", "fr": "" },
+      "code": "GAFOUR-TN",
+      "countryCode": "TN"
+    },
+    "REMADA-TN": {
+      "name": { "en": "Remada", "ar": "", "fr": "" },
+      "code": "REMADA-TN",
+      "countryCode": "TN"
+    },
+    "KHUNAYS-TN": {
+      "name": { "en": "Khunays", "ar": "", "fr": "" },
+      "code": "KHUNAYS-TN",
+      "countryCode": "TN"
+    },
+    "JERISSA-TN": {
+      "name": { "en": "Jerissa", "ar": "", "fr": "" },
+      "code": "JERISSA-TN",
+      "countryCode": "TN"
+    },
+    "EL-HAOUARIA-TN": {
+      "name": { "en": "El Haouaria", "ar": "", "fr": "" },
+      "code": "EL-HAOUARIA-TN",
+      "countryCode": "TN"
+    },
+    "AGAREB-TN": {
+      "name": { "en": "Agareb", "ar": "", "fr": "" },
+      "code": "AGAREB-TN",
+      "countryCode": "TN"
+    },
+    "MENZEL-KAMEL-TN": {
+      "name": { "en": "Menzel Kamel", "ar": "", "fr": "" },
+      "code": "MENZEL-KAMEL-TN",
+      "countryCode": "TN"
+    },
+    "TAZARKA-TN": {
+      "name": { "en": "Tazarka", "ar": "", "fr": "" },
+      "code": "TAZARKA-TN",
+      "countryCode": "TN"
+    },
+    "HARQALAH-TN": {
+      "name": { "en": "Harqalah", "ar": "", "fr": "" },
+      "code": "HARQALAH-TN",
+      "countryCode": "TN"
+    },
+    "BENI-HASSANE-TN": {
+      "name": { "en": "Beni Hassane", "ar": "", "fr": "" },
+      "code": "BENI-HASSANE-TN",
+      "countryCode": "TN"
+    },
+    "DEHIBA-TN": {
+      "name": { "en": "Dehiba", "ar": "", "fr": "" },
+      "code": "DEHIBA-TN",
+      "countryCode": "TN"
+    }
+  }
+}

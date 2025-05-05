@@ -1,81 +1,45 @@
-import { countriesDb } from './data';
-import type { CountriesCode, Country, Locales } from './types/common';
+import type { CountriesCode, Locales } from './types/common';
+import { formatCountry, importCountry } from './utils';
 
-export const getCountryInfo = (countryCode: CountriesCode) => {
-  const country = countriesDb?.[countryCode];
+export const getCountryInfo = async (
+  countryCode: CountriesCode,
+  locale: Locales = 'en',
+) => {
+  const country = await importCountry(countryCode);
+
   if (!country) {
     return null;
   }
-
-  return country as Country;
+  
+  return formatCountry(country, locale);
 };
 
-export const getNameByCountryCode = (
+export const getNameByCountryCode = async (
   countryCode: CountriesCode,
   locales: Locales = 'en',
 ) => {
-  const country = countriesDb?.[countryCode];
-  if (!country) {
-    return null;
-  }
-
-  const countryName = country.name?.[locales];
-  if (!countryName) {
-    return null;
-  }
-
-  return countryName;
+  const country = await importCountry(countryCode);
+  return country?.name?.[locales] ?? null;
 };
 
-export const getCurrencyByCountryCode = (countryCode: CountriesCode) => {
-  const country = countriesDb?.[countryCode];
-  if (!country) {
-    return null;
-  }
-
-  const currency = country.currency;
-  if (!currency) {
-    return null;
-  }
-
-  return currency;
+export const getCurrencyByCountryCode = async (countryCode: CountriesCode) => {
+  const country = await importCountry(countryCode);
+  return country?.currency ?? null;
 };
-export const getDiallingInfoByCountryCode = (countryCode: CountriesCode) => {
-  const country = countriesDb?.[countryCode];
-  if (!country) {
-    return null;
-  }
 
-  const dialling = country.dialling;
-  if (!dialling) {
-    return null;
-  }
-
-  return dialling;
+export const getDiallingInfoByCountryCode = async (
+  countryCode: CountriesCode,
+) => {
+  const country = await importCountry(countryCode);
+  return country?.dialling ?? null;
 };
-export const getLanguageByCountryCode = (countryCode: CountriesCode) => {
-  const country = countriesDb?.[countryCode];
-  if (!country) {
-    return null;
-  }
 
-  const language = country.language;
-  if (!language) {
-    return null;
-  }
-
-  return language;
+export const getLanguageByCountryCode = async (countryCode: CountriesCode) => {
+  const country = await importCountry(countryCode);
+  return country?.language ?? null;
 };
-export const getCapitalByCountryCode = (countryCode: CountriesCode) => {
-  const country = countriesDb?.[countryCode];
-  if (!country) {
-    return null;
-  }
 
-  const capital = country.capital;
-  if (!capital) {
-    return null;
-  }
-
-  return capital;
+export const getCapitalByCountryCode = async (countryCode: CountriesCode) => {
+  const country = await importCountry(countryCode);
+  return country?.capital ?? null;
 };

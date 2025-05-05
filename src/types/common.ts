@@ -251,11 +251,21 @@ export type CountriesCode =
 
 export type Locales = 'en' | 'fr' | 'ar';
 
-interface TranslatedName {
-  en: string;
-  fr?: string;
-  ar?: string;
+type TranslatedName = {
+  [key in Locales]?: string;
+};
+export interface City {
+  name: {
+    en: string;
+    fr?: string;
+    ar?: string;
+    [key: string]: string | undefined;
+  };
+  code: string;
+  countryCode: string;
 }
+
+export type Cities = Record<string, City>;
 
 export interface Country {
   name: TranslatedName;
@@ -274,6 +284,16 @@ export interface Country {
     name: string | null;
     code: string | null;
   };
+  cities: Cities;
 }
+
+export type FormattedCity = Omit<City, 'name'> & { name: string };
+
+export type FormattedCities = Record<string, FormattedCity>;
+
+export type FormattedCountry = Omit<Country, 'name' | 'cities'> & {
+  name: string;
+  cities: FormattedCities;
+};
 
 export type CountriesType = Record<CountriesCode, Country>;

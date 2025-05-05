@@ -1,0 +1,211 @@
+{
+  "name": { "en": "Zimbabwe", "fr": "Zimbabwe", "ar": "زيمبابوي" },
+  "code": "ZW",
+  "capital": "Harare",
+  "language": "Chibarwe",
+  "dialling": {
+    "calling_code": ["263"],
+    "national_prefix": "0",
+    "national_number_lengths": [8, 9, 10, 11],
+    "national_destination_code_lengths": [2],
+    "international_prefix": "00"
+  },
+  "currency": { "name": "Euro", "code": "EUR" },
+  "cities": {
+    "HARARE-ZW": {
+      "name": { "en": "Harare", "ar": "", "fr": "" },
+      "code": "HARARE-ZW",
+      "countryCode": "ZW"
+    },
+    "MASVINGO-ZW": {
+      "name": { "en": "Masvingo", "ar": "", "fr": "" },
+      "code": "MASVINGO-ZW",
+      "countryCode": "ZW"
+    },
+    "BULAWAYO-ZW": {
+      "name": { "en": "Bulawayo", "ar": "", "fr": "" },
+      "code": "BULAWAYO-ZW",
+      "countryCode": "ZW"
+    },
+    "CHITUNGWIZA-ZW": {
+      "name": { "en": "Chitungwiza", "ar": "", "fr": "" },
+      "code": "CHITUNGWIZA-ZW",
+      "countryCode": "ZW"
+    },
+    "MUTARE-ZW": {
+      "name": { "en": "Mutare", "ar": "", "fr": "" },
+      "code": "MUTARE-ZW",
+      "countryCode": "ZW"
+    },
+    "GWERU-ZW": {
+      "name": { "en": "Gweru", "ar": "", "fr": "" },
+      "code": "GWERU-ZW",
+      "countryCode": "ZW"
+    },
+    "NKAYI-ZW": {
+      "name": { "en": "Nkayi", "ar": "", "fr": "" },
+      "code": "NKAYI-ZW",
+      "countryCode": "ZW"
+    },
+    "KWEKWE-ZW": {
+      "name": { "en": "Kwekwe", "ar": "", "fr": "" },
+      "code": "KWEKWE-ZW",
+      "countryCode": "ZW"
+    },
+    "NORTON-ZW": {
+      "name": { "en": "Norton", "ar": "", "fr": "" },
+      "code": "NORTON-ZW",
+      "countryCode": "ZW"
+    },
+    "KADOMA-ZW": {
+      "name": { "en": "Kadoma", "ar": "", "fr": "" },
+      "code": "KADOMA-ZW",
+      "countryCode": "ZW"
+    },
+    "CHEGUTU-ZW": {
+      "name": { "en": "Chegutu", "ar": "", "fr": "" },
+      "code": "CHEGUTU-ZW",
+      "countryCode": "ZW"
+    },
+    "CHINHOYI-ZW": {
+      "name": { "en": "Chinhoyi", "ar": "", "fr": "" },
+      "code": "CHINHOYI-ZW",
+      "countryCode": "ZW"
+    },
+    "MARONDERA-ZW": {
+      "name": { "en": "Marondera", "ar": "", "fr": "" },
+      "code": "MARONDERA-ZW",
+      "countryCode": "ZW"
+    },
+    "SAKUBVA-ZW": {
+      "name": { "en": "Sakubva", "ar": "", "fr": "" },
+      "code": "SAKUBVA-ZW",
+      "countryCode": "ZW"
+    },
+    "BINDURA-ZW": {
+      "name": { "en": "Bindura", "ar": "", "fr": "" },
+      "code": "BINDURA-ZW",
+      "countryCode": "ZW"
+    },
+    "HWANGE-ZW": {
+      "name": { "en": "Hwange", "ar": "", "fr": "" },
+      "code": "HWANGE-ZW",
+      "countryCode": "ZW"
+    },
+    "BEITBRIDGE-ZW": {
+      "name": { "en": "Beitbridge", "ar": "", "fr": "" },
+      "code": "BEITBRIDGE-ZW",
+      "countryCode": "ZW"
+    },
+    "CHIREDZI-ZW": {
+      "name": { "en": "Chiredzi", "ar": "", "fr": "" },
+      "code": "CHIREDZI-ZW",
+      "countryCode": "ZW"
+    },
+    "RUSAPE-ZW": {
+      "name": { "en": "Rusape", "ar": "", "fr": "" },
+      "code": "RUSAPE-ZW",
+      "countryCode": "ZW"
+    },
+    "ZVISHAVANE-ZW": {
+      "name": { "en": "Zvishavane", "ar": "", "fr": "" },
+      "code": "ZVISHAVANE-ZW",
+      "countryCode": "ZW"
+    },
+    "CHIPINGE-ZW": {
+      "name": { "en": "Chipinge", "ar": "", "fr": "" },
+      "code": "CHIPINGE-ZW",
+      "countryCode": "ZW"
+    },
+    "KAROI-ZW": {
+      "name": { "en": "Karoi", "ar": "", "fr": "" },
+      "code": "KAROI-ZW",
+      "countryCode": "ZW"
+    },
+    "VICTORIA-FALLS-ZW": {
+      "name": { "en": "Victoria Falls", "ar": "", "fr": "" },
+      "code": "VICTORIA-FALLS-ZW",
+      "countryCode": "ZW"
+    },
+    "REDCLIFF-ZW": {
+      "name": { "en": "Redcliff", "ar": "", "fr": "" },
+      "code": "REDCLIFF-ZW",
+      "countryCode": "ZW"
+    },
+    "MUKUMBURA-ZW": {
+      "name": { "en": "Mukumbura", "ar": "", "fr": "" },
+      "code": "MUKUMBURA-ZW",
+      "countryCode": "ZW"
+    },
+    "KARIBA-ZW": {
+      "name": { "en": "Kariba", "ar": "", "fr": "" },
+      "code": "KARIBA-ZW",
+      "countryCode": "ZW"
+    },
+    "SHURUGWI-ZW": {
+      "name": { "en": "Shurugwi", "ar": "", "fr": "" },
+      "code": "SHURUGWI-ZW",
+      "countryCode": "ZW"
+    },
+    "RUWA-ZW": {
+      "name": { "en": "Ruwa", "ar": "", "fr": "" },
+      "code": "RUWA-ZW",
+      "countryCode": "ZW"
+    },
+    "MUREHWA-ZW": {
+      "name": { "en": "Murehwa", "ar": "", "fr": "" },
+      "code": "MUREHWA-ZW",
+      "countryCode": "ZW"
+    },
+    "MVURWI-ZW": {
+      "name": { "en": "Mvurwi", "ar": "", "fr": "" },
+      "code": "MVURWI-ZW",
+      "countryCode": "ZW"
+    },
+    "KEZI-ZW": {
+      "name": { "en": "Kezi", "ar": "", "fr": "" },
+      "code": "KEZI-ZW",
+      "countryCode": "ZW"
+    },
+    "PLUMTREE-ZW": {
+      "name": { "en": "Plumtree", "ar": "", "fr": "" },
+      "code": "PLUMTREE-ZW",
+      "countryCode": "ZW"
+    },
+    "GWANDA-ZW": {
+      "name": { "en": "Gwanda", "ar": "", "fr": "" },
+      "code": "GWANDA-ZW",
+      "countryCode": "ZW"
+    },
+    "MUTOKO-ZW": {
+      "name": { "en": "Mutoko", "ar": "", "fr": "" },
+      "code": "MUTOKO-ZW",
+      "countryCode": "ZW"
+    },
+    "MHANGURA-ZW": {
+      "name": { "en": "Mhangura", "ar": "", "fr": "" },
+      "code": "MHANGURA-ZW",
+      "countryCode": "ZW"
+    },
+    "CHIVHU-ZW": {
+      "name": { "en": "Chivhu", "ar": "", "fr": "" },
+      "code": "CHIVHU-ZW",
+      "countryCode": "ZW"
+    },
+    "MAZOE-ZW": {
+      "name": { "en": "Mazoe", "ar": "", "fr": "" },
+      "code": "MAZOE-ZW",
+      "countryCode": "ZW"
+    },
+    "SHAMVA-ZW": {
+      "name": { "en": "Shamva", "ar": "", "fr": "" },
+      "code": "SHAMVA-ZW",
+      "countryCode": "ZW"
+    },
+    "LUPANE-ZW": {
+      "name": { "en": "Lupane", "ar": "", "fr": "" },
+      "code": "LUPANE-ZW",
+      "countryCode": "ZW"
+    }
+  }
+}
