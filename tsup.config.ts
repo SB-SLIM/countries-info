@@ -9,4 +9,7 @@ export default defineConfig({
   format: 'esm',
   dts: true,
   outDir: 'dist',
+  loader: {
+    ".json": "copy"
+  },
 });
