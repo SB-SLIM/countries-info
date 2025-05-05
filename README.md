@@ -1,4 +1,3 @@
-
 # @sb-codex/countries-info
 
 A helper package to retrieve detailed information about countries based on their country code. You can access data such as country names, cities, capitals, currencies, and more, by specifying the country code and language.
@@ -42,142 +41,41 @@ npm install @sb-codex/countries-info
 - `getCapitalByCountryCode`
 - `getCitiesByCountryCode`
 
-### 1. `getNameByCountryCode(code: string, language: string): string`
-
-This function returns the country name in the specified language.
-
-**Parameters:**
-
-- `code` (string): The country code (e.g., "TN" for Tunisia).
-- `language` (string): The language code (e.g., "en" for English, "fr" for French, etc.).
-
-**Example:**
+### 1. `getCountryInfo(code: string, lang?: string)`
 
 ```typescript
-import { getNameByCountryCode } from '@sb-codex/countries-info';
-
-const countryName = getNameByCountryCode('TN', 'en');
-console.log(countryName); // Outputs: Tunisia
+getCountryInfo(code: string, lang?: string): Promise<{
+  name: string,
+  capital: string,
+  language: string,
+  currency: { name: string, code: string },
+  dialling: {
+    calling_code: string[],
+    national_prefix: string | null,
+    national_number_lengths: number[],
+    national_destination_code_lengths: number[],
+    international_prefix: string
+  },
+  cities: { name: string, code: string, countryCode: string }[]
+}>
 ```
 
-### 2. `getCitiesByCountryCode(code: string): string[]`
-
-This function returns an array of cities for a given country code.
-
 **Parameters:**
 
-- `code` (string): The country code (e.g., "TN" for Tunisia).
+| Name   | Type                | Description                                                             |
+| :----- | :------------------ | :---------------------------------------------------------------------- |
+| `code` | `string`            | ISO 3166-1 alpha-2 country code (e.g., "TN" for Tunisia).               |
+| `lang` | `string` (optional) | Language code (e.g., `"ar"` for Arabic). Only affects the `name` field. |
 
 **Example:**
 
 ```typescript
-import { getCitiesByCountryCode } from '@sb-codex/countries-info';
-
-const cities = getCitiesByCountryCode('TN');
-console.log(cities); // Outputs: ['Tunis', 'Sfax', 'Sousse']
-```
-
-### 3. `getCurrencyByCountryCode(code: string): { name: string, code: string }`
-
-This function returns the currency information for a given country code.
-
-**Parameters:**
-
-- `code` (string): The country code (e.g., "TN" for Tunisia).
-
-**Example:**
-
-```typescript
-import { getCurrencyByCountryCode } from '@sb-codex/countries-info';
-
-const currency = getCurrencyByCountryCode('TN');
-console.log(currency); // Outputs: { name: 'Tunisian Dinar', code: 'TND' }
-```
-
-### 4. `getCapitalByCountryCode(code: string): string`
-
-This function returns the capital of the country by its country code.
-
-**Parameters:**
-
-- `code` (string): The country code (e.g., "TN" for Tunisia).
-
-**Example:**
-
-```typescript
-import { getCapitalByCountryCode } from '@sb-codex/countries-info';
-
-const capital = getCapitalByCountryCode('TN');
-console.log(capital); // Outputs: Tunis
-```
-
-### 5. `getLanguageByCountryCode(code: string): string`
-
-This function returns the official language of the country by its country code.
-
-**Parameters:**
-
-- `code` (string): The country code (e.g., "TN" for Tunisia).
-
-**Example:**
-
-```typescript
-import { getLanguageByCountryCode } from '@sb-codex/countries-info';
-
-const language = getLanguageByCountryCode('TN');
-console.log(language); // Outputs: Arabic
-```
-
-### 6. `getDiallingInfoByCountryCode(code: string): { calling_code: string[], national_prefix: string | null, national_number_lengths: number[], national_destination_code_lengths: number[], international_prefix: string }`
-
-This function returns dialing information for a given country code, including calling codes, number lengths, and international dialing prefix.
-
-**Parameters:**
-
-- `code` (string): The country code (e.g., "TN" for Tunisia).
-
-**Example:**
-
-```typescript
-import { getDiallingInfoByCountryCode } from '@sb-codex/countries-info';
-
-const diallingInfo = getDiallingInfoByCountryCode('TN');
-console.log(diallingInfo);
-/*
-  Outputs:
-  {
-    calling_code: ['216'],
-    national_prefix: null,
-    national_number_lengths: [8],
-    national_destination_code_lengths: [2],
-    international_prefix: '00'
-  }
-*/
-```
-
-### 7. `getCountryInfo(code: string): { name: string, capital: string, language: string, currency: { name: string, code: string }, dialling: { calling_code: string[], national_prefix: string | null, national_number_lengths: number[], national_destination_code_lengths: number[], international_prefix: string } }`
-
-This function returns a comprehensive set of information about a country, including name, capital, language, currency, and dialing information.
-
-**Parameters:**
-
-- `code` (string): The country code (e.g., "TN" for Tunisia).
-
-**Example:**
-
-```typescript
-import { getCountryInfo } from '@sb-codex/countries-info';
-
-const countryInfo = getCountryInfo('TN');
+const countryInfo = await getCountryInfo('TN');
 console.log(countryInfo);
 /*
   Outputs:
   {
-    name: name: {
-      en: 'Tunisia',
-      fr: 'Tunisie',
-      ar: 'تونس',
-    },
+    name: 'Tunisia',
     capital: 'Tunis',
     language: 'Arabic',
     currency: { name: 'Tunisian Dinar', code: 'TND' },
@@ -188,39 +86,167 @@ console.log(countryInfo);
       national_destination_code_lengths: [2],
       international_prefix: '00'
     }
+    "cities": [
+      {
+        "name": "Tunis",
+        "code": "TUNIS-TN",
+        "countryCode": "TN"
+      },
+      {
+        "name": "Sfax",
+        "code": "SFAX-TN",
+        "countryCode": "TN"
+      },
+      ...
+    ]
   }
 */
 ```
 
-## Example Data
+---
 
-Here’s an example of how the data is structured:
+### 2. `getNameByCountryCode(code: string, language: string)`
 
 ```typescript
-const countriesDb = {
-  TN: {
-    name: {
-      en: 'Tunisia',
-      fr: 'Tunisie',
-      ar: 'تونس',
-    },
-    code: 'TN',
-    capital: 'Tunis',
-    language: 'Arabic',
-    dialling: {
-      calling_code: ['216'],
-      national_prefix: null,
-      national_number_lengths: [8],
-      national_destination_code_lengths: [2],
-      international_prefix: '00',
-    },
-    currency: {
-      name: 'Tunisian Dinar',
-      code: 'TND',
-    },
-  },
-  // more countries...
-};
+getNameByCountryCode(code: string, language: string): Promise<string>
+```
+
+**Parameters:**
+
+| Name       | Type     | Description                                               |
+| :--------- | :------- | :-------------------------------------------------------- |
+| `code`     | `string` | ISO 3166-1 alpha-2 country code (e.g., "TN" for Tunisia). |
+| `language` | `string` | Language code (e.g., `"en"`, `"fr"`, `"ar"`).             |
+
+**Example:**
+
+```typescript
+const countryName = await getNameByCountryCode('TN', 'ar');
+console.log(countryName); // Outputs: تونس
+```
+
+---
+
+### 3. `getCitiesByCountryCode(code: string)`
+
+```typescript
+getCitiesByCountryCode(code: string): Promise<{ name: string, code: string, countryCode: string }[]>
+```
+
+**Parameters:**
+
+| Name   | Type     | Description                                               |
+| :----- | :------- | :-------------------------------------------------------- |
+| `code` | `string` | ISO 3166-1 alpha-2 country code (e.g., "TN" for Tunisia). |
+
+**Example:**
+
+```typescript
+const cities = await getCitiesByCountryCode('TN');
+console.log(cities);
+/* Outputs: [
+      {
+        "name": "Tunis",
+        "code": "TUNIS-TN",
+        "countryCode": "TN"
+      },
+      {
+        "name": "Sfax",
+        "code": "SFAX-TN",
+        "countryCode": "TN"
+      },
+      ...
+    ]*/
+```
+
+---
+
+### 4. `getCurrencyByCountryCode(code: string)`
+
+```typescript
+getCurrencyByCountryCode(code: string): Promise<{ name: string, code: string }>
+```
+
+**Parameters:**
+
+| Name   | Type     | Description                                               |
+| :----- | :------- | :-------------------------------------------------------- |
+| `code` | `string` | ISO 3166-1 alpha-2 country code (e.g., "TN" for Tunisia). |
+
+**Example:**
+
+```typescript
+const currency = await getCurrencyByCountryCode('TN');
+console.log(currency); // Outputs: { name: 'Tunisian Dinar', code: 'TND' }
+```
+
+---
+
+### 5. `getCapitalByCountryCode(code: string)`
+
+```typescript
+getCapitalByCountryCode(code: string): Promise<string>
+```
+
+**Parameters:**
+
+| Name   | Type     | Description                                               |
+| :----- | :------- | :-------------------------------------------------------- |
+| `code` | `string` | ISO 3166-1 alpha-2 country code (e.g., "TN" for Tunisia). |
+
+**Example:**
+
+```typescript
+const capital = await getCapitalByCountryCode('TN');
+console.log(capital); // Outputs: Tunis
+```
+
+---
+
+### 6. `getLanguageByCountryCode(code: string)`
+
+```typescript
+getLanguageByCountryCode(code: string): Promise<string>
+```
+
+**Parameters:**
+
+| Name   | Type     | Description                                               |
+| :----- | :------- | :-------------------------------------------------------- |
+| `code` | `string` | ISO 3166-1 alpha-2 country code (e.g., "TN" for Tunisia). |
+
+**Example:**
+
+```typescript
+const language = await getLanguageByCountryCode('TN');
+console.log(language); // Outputs: Arabic
+```
+
+---
+
+### 7. `getDiallingInfoByCountryCode(code: string)`
+
+```typescript
+getDiallingInfoByCountryCode(code: string): Promise<{
+  calling_code: string[],
+  national_prefix: string | null,
+  national_number_lengths: number[],
+  national_destination_code_lengths: number[],
+  international_prefix: string
+}>
+```
+
+**Parameters:**
+
+| Name   | Type     | Description                                               |
+| :----- | :------- | :-------------------------------------------------------- |
+| `code` | `string` | ISO 3166-1 alpha-2 country code (e.g., "TN" for Tunisia). |
+
+**Example:**
+
+```typescript
+const diallingInfo = await getDiallingInfoByCountryCode('TN');
+console.log(diallingInfo);
 ```
 
 ### Data Access
